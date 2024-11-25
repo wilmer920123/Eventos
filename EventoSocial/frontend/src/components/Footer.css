@@ -1,0 +1,24 @@
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 10; /* Asegura que el footer esté siempre por encima de otros contenidos */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Asegura que el cuerpo de la página ocupe toda la altura del viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; /* Esto asegura que el contenido principal ocupe el espacio restante */
+    padding-bottom: 50px; /* Esto asegura que no se sobreponga el pie de página */
+}

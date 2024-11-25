@@ -1,0 +1,70 @@
+/* Estilo para el contenedor del encabezado */
+.app-header {
+  display: flex;
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: rgb(245, 162, 9);
+  border-radius: 8px;
+}
+
+/* Logo a la izquierda */
+.logo {
+  height: 120px; /* Ajusta la altura del logo */
+  width: auto;  /* Mantiene la proporción */
+  margin-right: 20px; /* Espacio entre el logo y el texto */
+}
+
+/* Contenedor de texto y enlaces */
+.header-content {
+  display: flex;
+  flex-direction: column; /* Organiza título y enlaces en columna */
+  align-items: center;    /* Centra el contenido horizontalmente */
+  flex: 1; /* Ocupa el espacio restante */
+}
+
+/* Estilo para el texto del encabezado */
+.header-text h1 {
+  font-family: 'Playfair Display', serif; /* Fuente serif elegante */
+  font-size: 32px;          /* Tamaño de fuente */
+  font-weight: 700;         /* Negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 2px;      /* Espaciado entre letras */
+  color: rgb(246, 143, 59); /* Color naranja */
+  margin: 0;
+  padding: 0;
+  text-align: center;       /* Centra el texto */
+  margin-bottom: 20px;      /* Espaciado entre el título y los enlaces */
+}
+
+/* Estilo para los enlaces de navegación */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 0; /* Ajusta el margen */
+}
+
+.nav-link {
+  font-size: 18px;
+  color: white; /* Color inicial */
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Estilo para el enlace activo */
+.nav-link.active {
+  color: rgb(246, 143, 59); /* Color diferente para el enlace activo */
+  font-weight: bold;
+}
+
+/* Estilo para cuando el mouse pasa sobre el enlace */
+.nav-link:hover {
+  color: rgb(246, 143, 59); /* Color en hover */
+}
+
+.nav-link:focus {
+  outline: none;
+}

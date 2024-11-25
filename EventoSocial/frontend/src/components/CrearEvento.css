@@ -1,0 +1,115 @@
+/* Estilo general del contenedor */
+.crear-evento-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título principal */
+.crear-evento-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Formulario general */
+.crear-evento-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Grupos de inputs */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas */
+.form-group label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+/* Campos de entrada */
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    background-color: #f7f7f7;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Botón de enviar */
+.btn-submit {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Mensajes dinámicos */
+.mensaje {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #28a745; /* Verde para éxito */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .crear-evento-container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .crear-evento-form {
+        gap: 15px;
+    }
+
+    .btn-submit {
+        font-size: 0.9rem;
+    }
+}

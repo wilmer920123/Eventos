@@ -1,0 +1,39 @@
+/* Estilos generales de la aplicación */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1; /* Esto asegura que el contenido principal ocupe el espacio restante */
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+  margin-top: 20px;
+  padding-bottom: 60px; /* Añadir espacio suficiente para el footer */
+}
+
+/* Asegurarse de que el contenido del formulario o de cualquier componente no sobrepase la pantalla */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px;
+  }
+
+  main {
+    padding: 10px;
+    text-align: left; /* Alineación izquierda en pantallas pequeñas */
+  }
+}
